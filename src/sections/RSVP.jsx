@@ -6,10 +6,12 @@ import confetti from 'canvas-confetti';
 const RSVP = () => {
   const { t } = useLanguage();
   const [status, setStatus] = useState('idle');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('submitting');
+    setErrorMessage('');
     
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
@@ -24,16 +26,20 @@ const RSVP = () => {
         body: JSON.stringify(data)
       });
       
+      const result = await response.json().catch(() => ({}));
+
       if (response.ok) {
         setStatus('success');
         triggerConfetti();
       } else {
-        console.error("Form submission failed");
-        setStatus('idle');
+        console.error("Form submission failed", result);
+        setStatus('error');
+        setErrorMessage(result.message || "Form submission failed. Please try again.");
       }
     } catch (error) {
       console.error(error);
-      setStatus('idle');
+      setStatus('error');
+      setErrorMessage("Network error. Please try again later.");
     }
   };
 
@@ -91,6 +97,11 @@ const RSVP = () => {
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
+              {status === 'error' && (
+                <div className="bg-red-500/10 border border-red-500/50 text-red-200 px-4 py-3 rounded text-sm text-center">
+                  {errorMessage}
+                </div>
+              )}
               <div>
                 <label className="block text-sm text-muted mb-2 uppercase tracking-wider">{t.rsvp.nameLabel}</label>
                 <input name="name" required type="text" className="w-full bg-base/50 border border-gold/20 rounded px-4 py-3 text-main focus:outline-none focus:border-gold transition-colors" />
