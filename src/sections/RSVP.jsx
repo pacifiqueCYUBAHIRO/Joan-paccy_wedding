@@ -15,9 +15,12 @@ const RSVP = () => {
     
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
+    
+    // Add Web3Forms Access Key
+    data.access_key = "faecf790-89f8-4092-9d00-f4c654d2c06b";
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/paxiphique@gmail.com", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { 
           'Content-Type': 'application/json',
