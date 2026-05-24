@@ -78,6 +78,12 @@ const Hero = () => {
         className="hidden lg:flex fixed right-8 xl:right-12 top-1/2 -translate-y-1/2 flex-col items-center gap-3 z-50"
       >
         <div className="w-px h-16 bg-gradient-to-b from-transparent to-gold/50"></div>
+
+        <span className="text-gold tracking-[0.25em] text-[9px] uppercase whitespace-nowrap text-center">
+          {t.countdown.daysToGo}
+        </span>
+
+        <div className="w-px h-4 bg-gold/30"></div>
         
         <div className="flex flex-col items-center">
           <span className="text-2xl font-serif text-main">{String(timeLeft.days).padStart(2, '0')}</span>
@@ -111,7 +117,7 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 flex flex-col items-center mt-16">
 
-        {/* Real couple portrait — floating cinematic card */}
+        {/* Real couple portrait placeholder */}
         <motion.div
           initial={{ opacity: 0, y: -30, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -125,8 +131,6 @@ const Hero = () => {
               className="w-full h-full object-cover object-top scale-110"
             /> */}
           </div>
-          {/* Decorative ring */}
-          <div className="absolute -inset-2 rounded-full border border-gold/30 animate-pulse" />
         </motion.div>
 
         <motion.p

@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { FiHeart } from 'react-icons/fi';
-import realCoupleImg from '../assets/faces.jpg';
+import realCoupleImg from '../assets/story_proposal.png';
 
 const Invitation = () => {
   const { t } = useLanguage();
@@ -14,6 +14,16 @@ const Invitation = () => {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gold/5 blur-3xl pointer-events-none" />
 
       <div className="container mx-auto px-4 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-20"
+        >
+          <h2 className="text-4xl md:text-5xl text-gold mb-4 text-glow font-serif">{inv.title}</h2>
+          <div className="w-24 h-1 bg-gold mx-auto rounded-full opacity-50"></div>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}

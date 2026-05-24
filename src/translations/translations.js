@@ -3,7 +3,7 @@ export const translations = {
     nav: {
       home: "Home",
       story: "Our Story",
-      details: "Details",
+      details: "Location",
       gallery: "Gallery",
       invitation: "Invitation",
       rsvp: "RSVP"
@@ -21,7 +21,8 @@ export const translations = {
       hours: "Hours",
       minutes: "Minutes",
       seconds: "Seconds",
-      title: "The Big Day Approaches"
+      title: "The Big Day Approaches",
+      daysToGo: "Days to Go"
     },
     story: {
       title: "Our Love Story",
@@ -42,6 +43,7 @@ export const translations = {
       title: "Captured Memories"
     },
     invitation: {
+      title: "Invitation",
       quote: "\"So they are no longer two, but one flesh. Therefore, what God has joined together, no human being must separate\" (Matthew 19:6)",
       families: "The families of Joram BAREKYE represented by Bwankarikari Emanuel and Theobald KABAGEMA",
       requestLine: "with great pleasure invite you to the wedding ceremony of their children:",
@@ -100,7 +102,8 @@ export const translations = {
       hours: "Amasaha",
       minutes: "Iminota",
       seconds: "Amasegonda",
-      title: "Umunsi Nyamukuru Uregereje"
+      title: "Umunsi Nyamukuru Uregereje",
+      daysToGo: "Iminsi Isigaye"
     },
     story: {
       title: "Amateka y'Urukundo Rwacu",
@@ -121,6 +124,7 @@ export const translations = {
       title: "Urwibutso"
     },
     invitation: {
+      title: "Ubutumire",
       quote: "« Icyo Imana yateranije hamwe, umuntu ntakagitandukanye. » Mariko 10:9",
       families: "Umuryango wa Joram BAREKYE uhagarariwe na BWANKARIKARI Emanuel n'uwa Theobald KABAGEMA",
       requestLine: "yishimiye kubatumira mu bukwe bw'abana babo:",

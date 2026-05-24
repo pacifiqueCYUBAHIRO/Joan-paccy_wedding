@@ -53,7 +53,7 @@ const OurStory = () => {
                   viewport={{ once: true, margin: "-100px" }}
                   className={`w-full sm:w-1/2 mt-6 sm:mt-0 ${isEven ? 'sm:pr-12' : 'sm:pl-12'}`}
                 >
-                  <div className={`rounded-xl overflow-hidden border border-gold/20 shadow-xl group ${item.id === 'falling' ? 'aspect-[16/11]' : 'aspect-[4/3]'}`}>
+                  <div className={`rounded-xl overflow-hidden border border-gold/20 shadow-xl group ${item.id === 'falling' ? 'aspect-[16/14]' : 'aspect-[4/3]'}`}>
                     <img
                       src={item.image}
                       alt={content.title}

@@ -37,7 +37,7 @@ const Details = () => {
               <FiClock /> <span>{t.details.introDowry.time}</span>
             </div>
             <a 
-              href="https://maps.google.com" 
+              href="https://maps.app.goo.gl/z4jQs6RXMHXsXYdd8"
               target="_blank" 
               rel="noreferrer"
               className="inline-block px-6 py-2 border border-gold/50 text-gold rounded-full hover:bg-gold hover:text-navy transition-colors text-sm uppercase tracking-wider"
@@ -64,7 +64,7 @@ const Details = () => {
               <FiClock /> <span>{t.details.religiousCeremony.time}</span>
             </div>
             <a 
-              href="https://maps.google.com" 
+              href="https://maps.app.goo.gl/gK9QfNiVUVmaVhhU7"
               target="_blank" 
               rel="noreferrer"
               className="inline-block px-6 py-2 border border-gold/50 text-gold rounded-full hover:bg-gold hover:text-navy transition-colors text-sm uppercase tracking-wider"
@@ -91,7 +91,7 @@ const Details = () => {
               <FiClock /> <span>{t.details.reception.time}</span>
             </div>
             <a 
-              href="https://maps.google.com" 
+              href="https://maps.app.goo.gl/z4jQs6RXMHXsXYdd8"
               target="_blank" 
               rel="noreferrer"
               className="inline-block px-6 py-2 border border-gold/50 text-gold rounded-full hover:bg-gold hover:text-navy transition-colors text-sm uppercase tracking-wider"

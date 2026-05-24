@@ -91,15 +91,9 @@ const RSVP = () => {
             </motion.div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="block text-sm text-muted mb-2 uppercase tracking-wider">{t.rsvp.nameLabel}</label>
-                  <input name="name" required type="text" className="w-full bg-base/50 border border-gold/20 rounded px-4 py-3 text-main focus:outline-none focus:border-gold transition-colors" />
-                </div>
-                <div>
-                  <label className="block text-sm text-muted mb-2 uppercase tracking-wider">{t.rsvp.emailLabel}</label>
-                  <input name="email" required type="email" className="w-full bg-base/50 border border-gold/20 rounded px-4 py-3 text-main focus:outline-none focus:border-gold transition-colors" />
-                </div>
+              <div>
+                <label className="block text-sm text-muted mb-2 uppercase tracking-wider">{t.rsvp.nameLabel}</label>
+                <input name="name" required type="text" className="w-full bg-base/50 border border-gold/20 rounded px-4 py-3 text-main focus:outline-none focus:border-gold transition-colors" />
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
