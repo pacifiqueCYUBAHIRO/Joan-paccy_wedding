@@ -22,10 +22,10 @@ function App() {
         <main className="relative z-10">
           <Hero />
           <OurStory />
+          <Invitation />
           <Details />
           <Countdown />
           <Gallery />
-          <Invitation />
           <RSVP />
         </main>
         
