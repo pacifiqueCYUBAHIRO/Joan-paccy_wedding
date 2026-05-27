@@ -19,9 +19,9 @@ const Navbar = () => {
   const navLinks = [
     { name: t.nav.home, href: '#home' },
     { name: t.nav.story, href: '#story' },
+    { name: t.nav.invitation, href: '#invitation' },
     { name: t.nav.details, href: '#details' },
     { name: t.nav.gallery, href: '#gallery' },
-    { name: t.nav.invitation, href: '#invitation' },
     { name: t.nav.rsvp, href: '#rsvp' }
   ];
 
