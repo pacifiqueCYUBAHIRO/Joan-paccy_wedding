@@ -38,7 +38,7 @@ const Invitation = () => {
             <div className="h-1 bg-gradient-to-r from-transparent via-gold to-transparent" />
             
             {/* Inner content with double border effect */}
-            <div className="m-4 md:m-8 border border-gold/15 rounded-xl p-8 md:p-12 text-center relative">
+            <div className="m-3 sm:m-4 md:m-8 border border-gold/15 rounded-xl p-6 sm:p-8 md:p-12 text-center relative">
               
               {/* Corner ornaments */}
               <div className="absolute top-3 left-3 w-8 h-8 border-t-2 border-l-2 border-gold/40 rounded-tl-sm" />
@@ -97,11 +97,11 @@ const Invitation = () => {
                 transition={{ delay: 0.7, duration: 0.8 }}
                 className="mb-10"
               >
-                <h2 className="text-4xl md:text-5xl font-serif text-main text-glow leading-snug">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-main text-glow leading-snug">
                   {inv.bride}
                 </h2>
-                <p className="text-3xl md:text-4xl font-serif text-gold my-2 text-glow">{inv.and}</p>
-                <h2 className="text-4xl md:text-5xl font-serif text-main text-glow leading-snug">
+                <p className="text-2xl sm:text-3xl md:text-4xl font-serif text-gold my-2 text-glow">{inv.and}</p>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif text-main text-glow leading-snug">
                   {inv.groom}
                 </h2>
               </motion.div>
