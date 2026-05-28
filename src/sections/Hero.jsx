@@ -34,7 +34,7 @@ const Hero = () => {
     <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Full-screen cinematic background */}
       <div
-        className="absolute inset-1 z-0 bg-contain bg-center bg-no-repeat"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroCoupleImg})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/40 to-navy" />
@@ -115,16 +115,16 @@ const Hero = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 flex flex-col items-center mt-16">
+      <div className="relative z-10 text-center px-4 flex flex-col items-center mt-[45vh] sm:mt-[30vh] md:mt-16 w-full">
 
         {/* Real couple portrait placeholder */}
         <motion.div
           initial={{ opacity: 0, y: -30, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.3, ease: 'easeOut' }}
-          className="mb-8 relative"
+          className="mb-0 md:mb-8 relative hidden md:block"
         >
-          <div className="w-36 h-36 md:w-44 md:h-44 mx-auto">
+          <div className="w-0 h-0 md:w-44 md:h-44 mx-auto">
             {/* <img
               src={realCoupleImg}
               alt="Joan & Paccy"
