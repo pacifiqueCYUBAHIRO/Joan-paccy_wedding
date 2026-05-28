@@ -31,7 +31,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-screen w-full flex flex-col items-center justify-end md:justify-center overflow-hidden pb-32 md:pb-0">
       {/* Full-screen cinematic background */}
       <div
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
@@ -115,7 +115,7 @@ const Hero = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 flex flex-col items-center mt-[45vh] sm:mt-[30vh] md:mt-16 w-full">
+      <div className="relative z-10 text-center px-4 flex flex-col items-center md:mt-16 w-full">
 
         {/* Real couple portrait placeholder */}
         <motion.div
@@ -137,7 +137,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="text-gold-light tracking-[0.3em] uppercase text-xs md:text-sm mb-4 drop-shadow-md"
+          className="text-gold-light tracking-[0.3em] uppercase text-xs md:text-sm mb-4 drop-shadow-md hidden md:block"
         >
           {t.hero.headline}
         </motion.p>
@@ -146,7 +146,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5, delay: 1, ease: 'easeOut' }}
-          className="text-5xl md:text-7xl lg:text-8xl font-serif text-main mb-4 text-glow drop-shadow-2xl"
+          className="text-5xl md:text-7xl lg:text-8xl font-serif text-main mb-4 text-glow drop-shadow-2xl hidden md:block"
         >
           {t.hero.names}
         </motion.h1>
@@ -155,14 +155,14 @@ const Hero = () => {
           initial={{ opacity: 0, scaleX: 0 }}
           animate={{ opacity: 1, scaleX: 1 }}
           transition={{ duration: 0.8, delay: 1.6 }}
-          className="w-24 h-px bg-gold mx-auto mb-4"
+          className="w-24 h-px bg-gold mx-auto mb-4 hidden md:block"
         />
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.8 }}
-          className="text-lg md:text-2xl font-serif text-gold-light mb-10 drop-shadow-md tracking-widest"
+          className="text-lg md:text-2xl font-serif text-gold-light mb-10 drop-shadow-md tracking-widest hidden md:block"
         >
           {t.hero.date}
         </motion.p>

@@ -31,7 +31,7 @@ const Navbar = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-glass shadow-lg py-4' : 'bg-transparent py-6'
+        isScrolled ? 'bg-glass shadow-lg py-4' : 'bg-glass md:bg-transparent shadow-md md:shadow-none py-4 md:py-6'
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
