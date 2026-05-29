@@ -34,7 +34,7 @@ const Hero = () => {
     <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Full-screen cinematic background */}
       <div
-        className="absolute inset-0 sm:inset-1 z-0 bg-cover sm:bg-contain bg-center bg-no-repeat grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
+        className="absolute inset-0 sm:inset-1 z-0 bg-cover sm:bg-contain bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroCoupleImg})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/40 to-navy" />
