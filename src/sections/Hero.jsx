@@ -34,7 +34,7 @@ const Hero = () => {
     <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Full-screen cinematic background */}
       <div
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 sm:inset-1 z-0 bg-cover sm:bg-contain bg-center bg-no-repeat grayscale hover:grayscale-0 transition-all duration-700 ease-in-out"
         style={{ backgroundImage: `url(${heroCoupleImg})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/40 to-navy" />
@@ -75,7 +75,7 @@ const Hero = () => {
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 2.5 }}
-        className="hidden lg:flex fixed right-8 xl:right-12 top-1/2 -translate-y-1/2 flex-col items-center gap-3 z-50"
+        className="hidden md:flex fixed right-3 lg:right-8 xl:right-12 top-1/2 -translate-y-1/2 flex-col items-center gap-3 z-50"
       >
         <div className="w-px h-16 bg-gradient-to-b from-transparent to-gold/50"></div>
 
