@@ -56,7 +56,7 @@ const Countdown = () => {
           {t.countdown.title}
         </motion.h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-md md:max-w-none mx-auto">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8">
           {timeBlocks.map((block, idx) => (
             <motion.div
               key={idx}
@@ -64,7 +64,7 @@ const Countdown = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="bg-glass border-glow rounded-lg p-4 sm:p-6 md:p-8 flex flex-col items-center"
+              className="bg-glass border-glow rounded-lg p-6 md:p-8 min-w-[100px] md:min-w-[140px] flex flex-col items-center"
             >
               <span className="text-4xl md:text-6xl font-serif text-main mb-2 counter">
                 {String(block.value).padStart(2, '0')}

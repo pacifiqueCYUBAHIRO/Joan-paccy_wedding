@@ -31,10 +31,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id="home" className="relative h-screen w-full flex flex-col items-center justify-end md:justify-center overflow-hidden pb-32 md:pb-0">
+    <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Full-screen cinematic background */}
       <div
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-1 z-0 bg-contain bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroCoupleImg})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-navy/70 via-navy/40 to-navy" />
@@ -115,16 +115,16 @@ const Hero = () => {
       </motion.div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-4 flex flex-col items-center md:mt-16 w-full">
+      <div className="relative z-10 text-center px-4 flex flex-col items-center mt-16">
 
         {/* Real couple portrait placeholder */}
         <motion.div
           initial={{ opacity: 0, y: -30, scale: 0.9 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 1.2, delay: 0.3, ease: 'easeOut' }}
-          className="mb-0 md:mb-8 relative hidden md:block"
+          className="mb-8 relative"
         >
-          <div className="w-0 h-0 md:w-44 md:h-44 mx-auto">
+          <div className="w-36 h-36 md:w-44 md:h-44 mx-auto">
             {/* <img
               src={realCoupleImg}
               alt="Joan & Paccy"
@@ -137,7 +137,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.8 }}
-          className="text-gold-light tracking-[0.3em] uppercase text-xs md:text-sm mb-4 drop-shadow-md hidden md:block"
+          className="text-gold-light tracking-[0.3em] uppercase text-xs md:text-sm mb-4 drop-shadow-md"
         >
           {t.hero.headline}
         </motion.p>
@@ -146,7 +146,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5, delay: 1, ease: 'easeOut' }}
-          className="text-5xl md:text-7xl lg:text-8xl font-serif text-main mb-4 text-glow drop-shadow-2xl hidden md:block"
+          className="text-5xl md:text-7xl lg:text-8xl font-serif text-main mb-4 text-glow drop-shadow-2xl"
         >
           {t.hero.names}
         </motion.h1>
@@ -155,14 +155,14 @@ const Hero = () => {
           initial={{ opacity: 0, scaleX: 0 }}
           animate={{ opacity: 1, scaleX: 1 }}
           transition={{ duration: 0.8, delay: 1.6 }}
-          className="w-24 h-px bg-gold mx-auto mb-4 hidden md:block"
+          className="w-24 h-px bg-gold mx-auto mb-4"
         />
 
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1.8 }}
-          className="text-lg md:text-2xl font-serif text-gold-light mb-10 drop-shadow-md tracking-widest hidden md:block"
+          className="text-lg md:text-2xl font-serif text-gold-light mb-10 drop-shadow-md tracking-widest"
         >
           {t.hero.date}
         </motion.p>
